@@ -17,12 +17,22 @@ function calculateDayValue(){
     console.log(d);
     return (math.floor(d));
 }
-function validate (form){
-    var genderM =form.gender_male.value;
-    var genderF =form.gender_female.value;
-
-    if (genderM.checked==false && genderF.checked==false){
-        alert ("you must select male or female");
+function getGender(){
+    var genders = document.getElementByName ("gender");
+    if (genders [0],checked == true){
+        var gender = "male";
+    }
+    else if (genders[1].checked == true){
+        var gender = "female";
+    }
+    else{
         return false;
     }
+}
+switch (gender){
+    case "male":
+    if ( dayValue ==1){
+        alert("you were born on" + dayNames[0] + "and your akan name is" + maleNames[0] +"!");
+    }
+    
 }
