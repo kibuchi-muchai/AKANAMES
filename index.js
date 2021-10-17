@@ -12,3 +12,9 @@ if (maleNames,femaleNames <0){
 } else{
     console.log("type your name correctly!");
 }
+
+if (maleNames,femaleNames <1){
+    console.log("monday!");
+} else{
+    console.log("type your name correctly!");
+}
