@@ -13,7 +13,16 @@ function calculateDayValue(){
     YY = parseInt (year.substring (2,4));
     MM = parseInt (document.getElementById("month")).value;
     DD = parseInt (document.getElementById("date").value);
-    d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) mod 7
+    d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) %7
     console.log(d);
     return (math.floor(d));
+}
+function validate (form){
+    var genderM =form.gender_male.value;
+    var genderF =form.gender_female.value;
+
+    if (genderM.checked==false && genderF.checked==false){
+        alert ("you must select male or female");
+        return false;
+    }
 }
