@@ -7,14 +7,13 @@ function submitBirthday(){
     var birthday = document.getElementById("myBirthday"). ariaValueMax;
     document.getElementById("displayBirthday").innerHTML = ("you are" + birthday + "years old.");
 }
-if (maleNames,femaleNames <0){
-    console.log("sunday!");
-} else{
-    console.log("type your name correctly!");
-}
-
-if (maleNames,femaleNames <1){
-    console.log("monday!");
-} else{
-    console.log("type your name correctly!");
+function calculateDayValue(){
+    year = document.getElementById("year").ariaValueMax;
+    CC = parseInt (year.substring (0,2));
+    YY = parseInt (year.substring (2,4));
+    MM = parseInt (document.getElementById("month")).value;
+    DD = parseInt (document.getElementById("date").value);
+    d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) mod 7
+    console.log(d);
+    return (math.floor(d));
 }
