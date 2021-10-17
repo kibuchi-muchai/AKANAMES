@@ -7,3 +7,8 @@ function submitBirthday(){
     var birthday = document.getElementById("myBirthday"). ariaValueMax;
     document.getElementById("displayBirthday").innerHTML = ("you are" + birthday + "years old.");
 }
+if (maleNames,femaleNames <0){
+    console.log("sunday!");
+} else{
+    console.log("type your name correctly!");
+}
