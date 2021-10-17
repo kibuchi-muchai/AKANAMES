@@ -1,0 +1,9 @@
+.center{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+input[type="text"]{
+    width: 300px;
+    height: auto;
+    font-size: 20px;
+}
