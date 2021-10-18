@@ -10,7 +10,11 @@ function validate(){
         document.myForm.month.focus() ;
         return false;
     }
-    
+    else if(document.myForm.year.value == "" || isNaN(document.myForm.year.value) || document.myForm.year.value.length !=4 ||document.myForm.year.value >2000 || document.myForm.year.value <=1900){
+        alert("please provide a valid year eg 2000");
+        document.myForm.year.focus() ;
+        return false;
+    }
 }
 
 
