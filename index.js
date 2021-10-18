@@ -64,5 +64,8 @@ switch (gender){
     else if(dayValue==2){
         alert("you were born on + dayNames"[1] + "and your akan name is" + maleNames[1] + "!");
     }
+    else if(dayValue==3){
+        alert("you were born on + dayNames"[2] + "and your akan name is" + maleNames[2] + "!");
+    }
     
 }
