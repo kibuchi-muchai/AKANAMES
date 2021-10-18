@@ -79,5 +79,27 @@ switch (gender){
     else if(dayValue==0){
         alert("you were born on" + dayNames[6] + "and your akan name is" + maleNames[6] + "!");
     }
-    
+    break;
+    case "female":
+        if ( dayValue ==1){
+            alert("you were born on" + dayNames[0] + "and your akan name is" + femaleNames[0] +"!");
+        }
+        else if(dayValue==2){
+            alert("you were born on" + dayNames[1] + "and your akan name is" + femaleNames[1] + "!");
+        }
+        else if(dayValue==3){
+            alert("you were born on" + dayNames[2] + "and your akan name is" + femaleNames[2] + "!");
+        }
+        else if(dayValue==4){
+            alert("you were born on" + dayNames[3] + "and your akan name is" + femaleNames[3] + "!");
+        }
+        else if(dayValue==5){
+            alert("you were born on" + dayNames[4] + "and your akan name is" + femaleNames[4] + "!");
+        }
+        else if(dayValue==6){
+            alert("you were born on" + dayNames[5] + "and your akan name is" + femaleNames[5] + "!");
+        }
+        else if(dayValue==0){
+            alert("you were born on" + dayNames[6] + "and your akan name is" + femaleNames[6] + "!");
+        }
 }
