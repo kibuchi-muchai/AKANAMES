@@ -19,6 +19,12 @@ function validate(){
         alert("please provide a valid date that you were born in");
         document.myForm.date.focus() ;
         return false;
+    }
+    else if(genders[0].checked==false && genders[1].checked==false){
+        alert("you must select male or female");
+        document.myForm.date.focus() ;
+        return false;
+    }
 }
 
 
