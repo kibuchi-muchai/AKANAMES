@@ -102,4 +102,11 @@ switch (gender){
         else if(dayValue==0){
             alert("you were born on" + dayNames[6] + "and your akan name is" + femaleNames[6] + "!");
         }
+        break
+        default:
+
+}
+function findName(){
+    dayValue = calculateDayValue();
+    getGender();
 }
