@@ -15,6 +15,10 @@ function validate(){
         document.myForm.year.focus() ;
         return false;
     }
+    else if(document.myForm.date.value == "" || isNaN(document.myForm.date.value) || document.myForm.date.value.length !=2 ||document.myForm.date.value >31 || document.myForm.date.value <0){
+        alert("please provide a valid date that you were born in");
+        document.myForm.date.focus() ;
+        return false;
 }
 
 
