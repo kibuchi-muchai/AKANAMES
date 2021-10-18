@@ -3,6 +3,22 @@ var dayNames= ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday",
 var maleNames= ["kwasi", "kwadwo", "kwabena", "kwaku", "kofi", "kwame"];
 var femaleNames= ["akosua", "adwoa", "abenaa", "akua", "yaa", "afua", "ama"];
 
+function validate(){
+    var genders = document.getElementByName("gender");
+    if(document.myForm.month.value == "" || document.myForm.month.value || document.myForm.month.value.length !=2 || document.myForm.month.value >12 || document.myForm.month.value <=0){
+        alert("please provide a valid month bettween 1 and 12");
+        document.myForm.month.focus() ;
+        return false;
+    }
+    
+}
+
+
+
+
+
+
+
 function submitBirthday(){
     var birthday = document.getElementById("myBirthday"). ariaValueMax;
     document.getElementById("displayBirthday").innerHTML = ("you are" + birthday + "years old.");
