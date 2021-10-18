@@ -12,8 +12,18 @@
 <body>
     <div class="center">
         <h1 align="center">Get your Akan name !</h1>
-        <input type="date" placeholder="year" id="year" name="birthday"/>
-        <button  onclick="getdate()">submit</button><br>
+    </div>
+    <div class="Overlay">
+        <div class="container">
+            <h2>Enter your details below</h2>
+            <form name="myForm" class="form" onsubmit="validate();"></form>
+            <div class="form-group">
+                <label for="number">Birth month</label>
+                <input type="number" class="form-control" id="date" placeholder="Date of birth" name="year">
+            </div>
+        </div>
+
+    </div>
 
     <div class="center">
         <form>
