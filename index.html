@@ -16,7 +16,7 @@
     <div class="Overlay">
         <div class="container">
             <h2>Enter your details below</h2>
-            <form name="myForm" class="form" onsubmit="validate();"></form>
+            <form name="myForm" class="form" onsubmit="validate();">
             <div class="form-group">
                 <label for="month">Birth month</label>
                 <input type="number" class="form-control" id="month" placeholder="Birth month" name="month">
@@ -34,10 +34,20 @@
             <label class="radio-inline">
             <input type="radio" name="female">female</label>
         </div>
-        <button type="submit" class="btn btn-primary" onclick="getyourname();">Get your name</button>
+        <button type="submit" class="btn btn-primary" onclick="getyourname();">Get your name</button><br>
+    </form>
+    <p id="results"></p>
     </div>
-
+ </div>
+<div class="card-deck">
+    <div class="card">
+        <div class="card-body-text-center">
+            <p class="card-text"> Akan names are derived from Ghanian culture.<br>
+                get your Akan name by filling in the form above.<br>
+            </p>
+        </div>
     </div>
+</div>
 
     <script src="index.js"></script>
     
