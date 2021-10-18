@@ -25,6 +25,9 @@ function validate(){
         document.myForm.date.focus() ;
         return false;
     }
+    else{
+        return true;
+    }
 }
 
 
